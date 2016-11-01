@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/creer_quizz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/nom_quizz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Nom du Quizz"
+        android:ems="10"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:id="@+id/choix_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bouton_moins"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/bouton_plus"
+        android:layout_toStartOf="@+id/bouton_plus"
+        android:layout_alignBottom="@+id/bouton_plus" />
+
+    <Button
+        android:layout_below="@+id/nom_quizz"
+        android:text="-"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="9dp"
+        android:id="@+id/bouton_moins" />
+
+    <Button
+        android:id="@+id/bouton_plus"
+        android:text="+"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_alignBaseline="@+id/bouton_moins"
+        android:layout_alignBottom="@+id/bouton_moins"
+        android:layout_toLeftOf="@+id/bouton_moins"
+        android:layout_toStartOf="@+id/bouton_moins" />
+
+    <EditText
+        android:id="@+id/intitulé_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Intitulé de la question"
+        android:layout_below="@+id/choix_question"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/bonne_rep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Bonne réponse"
+        android:layout_below="@+id/intitulé_question"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/mauvaise_rep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Mauvaise réponse"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/bonne_rep"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/bouton_sauv"
+        android:text="V"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="80dp"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/bouton_suppr"
+        android:text="X"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="40dp" />
+
+</RelativeLayout>
